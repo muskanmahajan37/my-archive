@@ -1,0 +1,31 @@
+First we need to install a package
+
+npm i react-router-dom
+
+---------------------------------
+
+import { Route, Switch } from 'react-router-dom';
+
+import AllMeetups from './pages/AllMeetups';
+import NewMeetup from './pages/NewMeetup';
+import Favorites from './pages/Favorites'
+
+function App() {
+  return (
+    <div>
+      <Switch>
+        <Route path='/' exact>
+          <AllMeetups />
+        </Route>
+        <Route path='/new-meetup' exact>
+          <NewMeetup />
+        </Route>
+        <Route path='/favorites' exact>
+          <Favorites />
+        </Route>
+      </Switch>
+    </div>
+  );
+}
+
+export default App;

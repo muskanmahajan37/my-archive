@@ -1,0 +1,14 @@
+https://github.com/academind/react-complete-guide-code/tree/zz-reactjs-summary/extra-files
+
+NOTE: .children is a special props. it always hold the children/content
+
+
+import classes from './Card.module.css'
+
+function Card(props) {
+    return (
+        <div className={classes.card}>{props.children}</div>
+    )
+}
+
+export default Card;

@@ -1,0 +1,35 @@
+NOTE: without a state occurred the default variable won't run again. Meaning if you change variable then it won't trigger an event.
+
+To tell react that we need to run again we need to import something from react library.
+
+NOTE: by default this is the code
+	import React from 'react';
+	
+	now we need to add curly bracket to add state
+	
+	import React, { useState } from 'react';
+	// useState is so called react hook. NOTE: there are other hooks as well.
+	// NOTE: react hooks always start by 'use'
+	// NOTE: react hooks should be called in the function. Not outside the function and not nested function!
+	// useState return an array. so you can use array destructuring!
+	
+	const [title, setTitle] = useState(props.title);
+	NOTE: useState always returns an array with 2 elements.
+	NOTE: the first element is a pointer of that manageme value. or the value stored in props title.
+		  the second element is a function which we can later call to set a new title or value. 
+		  
+-------------
+import React, { useState } from 'react';
+
+function ExpenseItem(props) {
+    const [title, setTitle] = useState(props.title);
+
+    const clickHandler = () => {
+        setTitle('Updated')
+    }
+	return (
+            <button onClick={clickHandler}>Change Title</button>
+    );
+}
+
+// this time it will update the dom

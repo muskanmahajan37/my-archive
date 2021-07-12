@@ -1,0 +1,36 @@
+What is State?
+https://academind.com/tutorials/what-is-state/
+
+{modalOpen ? <Modal /> : null} {/* conditional */}
+{/* or {modalOpen && <modal />} shorter*/}
+{modalOpen && <Backdrop />}
+
+
+-----------------
+
+import { useState } from 'react';
+
+import Modal from './Modal';
+import Backdrop from './Backdrop';
+
+function Todo(props) {
+    const [modalOpen, setModalOpen] = useState(false);
+
+    function deleteHandler() {
+        setModalOpen(true)
+    }
+
+    return (
+        <div className="card">
+            <h2>{props.title}</h2>
+            <div className="actions">
+                <button className="btn" onClick={deleteHandler}>Delete</button>
+            </div>
+            {modalOpen ? <Modal /> : null} {/* conditional */}
+            {/* or {modalOpen && <modal />} shorter*/}
+            {modalOpen && <Backdrop />}
+        </div>
+    )
+}
+
+export default Todo;

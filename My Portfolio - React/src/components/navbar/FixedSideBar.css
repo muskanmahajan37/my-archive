@@ -1,0 +1,136 @@
+.fixed-left-line {
+    position: fixed;
+    left: 40px;
+    top: -40px;
+    z-index: 1;
+    transition: .2s ease-in-out;
+}
+
+.fixed-left-sm {
+    width: 60px;
+    height: 432px;
+    border-radius: 10px;
+    position: fixed;
+    left: 12px;
+    top: 270px;
+    transition: .1s ease-in;
+    background-color: #000;
+    z-index: 1000;
+}
+
+.linkedin {
+    width: 30px;
+    position: fixed;
+    cursor: pointer;
+    top: 280px;
+    left: 26px;
+    transition: .2s ease-in-out;
+}
+
+.twitter {
+    width: 30px;
+    position: fixed;
+    cursor: pointer;
+    left: 26px;
+    top: 370px;
+    transition: .2s ease-in-out;
+}
+
+.github {
+    width: 30px;
+    position: fixed;
+    cursor: pointer;
+    left: 26px;
+    top: 460px;
+    transition: .2s ease-in-out;
+}
+
+.resume-btn {
+    background-color: transparent;
+    border: 2px solid #216869;
+    border-radius: 5px;
+    opacity: 1;
+    color: #216869;
+    transform: rotate(270deg);
+    position: fixed;
+    left: 4px;
+    top: 600px;
+    font-weight: 600;
+    padding: 0 12px;
+    transition: .2s ease-in-out;
+}
+
+.linkedin:hover {
+    transform: translateY(-2px);
+    background-color: #000;
+    width: 28px;
+}
+
+.twitter:hover {
+    transform: translateY(-2px);
+    width: 28px;
+}
+
+.github:hover {
+    transform: translateY(-2px);
+    width: 28px;
+}
+
+.resume-btn:hover {
+    transform: rotate(270deg);
+    top: 595px;
+}
+
+@media(max-width: 819px) {
+    .fixed-left-line {
+        display: none;
+    }
+
+    .fixed-left-sm {
+        position: relative;
+        width: 250px;
+        height: 50px;
+        top: 500px;
+        left: 20%;
+
+        border-radius: 10px;
+        background-color: #000;
+        z-index: 1000;
+    }
+
+    .linkedin {
+        position: absolute;
+        top: -8px;
+        left: 10px;
+        width: 20px;
+    }
+
+    .twitter {
+        position: absolute;
+        top: -6px;
+        left: 50px;
+        width: 20px;
+    }
+
+    .github {
+        position: absolute;
+        top: -7px;
+        left: 90px;
+        width: 20px;
+    }
+
+    .resume-btn {
+        transform: rotate(0);
+        position: absolute;
+        top: 16px;
+        left: 180px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    .resume-btn:hover {
+        transform: translateX(-5px);
+        top: 15px;
+        font-size: 14px;
+    }
+}

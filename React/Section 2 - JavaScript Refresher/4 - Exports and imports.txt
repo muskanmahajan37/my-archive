@@ -1,0 +1,20 @@
+Exports & Imports (Modules)
+
+const person = {
+	name: 'Max'
+}
+
+export default person
+
+-----------
+
+export const clean = () => {...}
+export const dataBase = 10;
+
+----------- main.js
+
+import person from './person.js'
+import prs from './person.js'
+
+import { dataBase } from './utility.js'
+import { clean } from './utility.js'

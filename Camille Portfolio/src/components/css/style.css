@@ -1,0 +1,190 @@
+.bg {
+    background-color: #944F26;
+}
+
+#navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+    z-index: 1000;
+}
+
+.header {
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+.hero-header {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/hero-header.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-container {
+    width: 1320px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-header h1 {
+    font-size: 42px;
+    color: #fff;
+    padding-left: 12px;
+}
+
+.hero-header p {
+    color: #CECECE;
+    font-size: 16px;
+    padding-left: 12px;
+}
+
+.panel-container {
+    padding-top: -150px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.panel {
+    height: 337px;
+    width: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    cursor: pointer;
+    flex: 0.3;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+
+}
+
+.panel.active {
+    flex: 2;
+    border-radius: 10px;
+}
+
+.about-container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.about-collapse {
+    max-width: 100%;
+    background-color: #944F26;
+    border: none;
+}
+
+/* .services-container {
+    max-width: 1320px;
+    margin: 0 auto;
+} */
+
+.services-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.services-panel {
+    min-width: 280px;
+    max-width: 281px;
+    height: 530px;
+}
+
+.services-panel-info {
+    width: 100%;
+    height: 170px;
+    position: relative;
+}
+
+.services-panel-dollarsign {
+    position: absolute;
+    top: 104px;
+    left: 88px;
+}
+
+.services-panel-value {
+    position: absolute;
+    top: 98px;
+    left: 101px;
+    font-size: 40px;
+}
+
+.services-panel-week {
+    position: absolute;
+    top: 121px;
+    left: 153px;
+}
+
+.value-160 {
+    left: 170px;
+}
+
+.services-panel-button {
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.va-assistant-container {
+    height: 280px;
+}
+
+.va-assistant-container p {
+    max-width: 843px;
+    margin: 0 auto;
+}
+
+.contact-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-height {
+    height: 194px;
+}
+
+.wrapper-1 {
+    display: flex;
+}
+
+.work-with-me h2 {
+    font-size: 14px;
+}
+
+.work-with-me h3 {
+    font-size: 12px;
+}
+
+.location h2 {
+    font-size: 14px;
+}
+
+.location h3 {
+    font-size: 12px;
+}

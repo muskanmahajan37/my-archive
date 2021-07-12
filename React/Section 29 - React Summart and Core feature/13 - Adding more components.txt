@@ -1,0 +1,4 @@
+Modal.js is usually what named for handling overlay
+
+
+backdrop for handling background

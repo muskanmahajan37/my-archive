@@ -1,0 +1,3 @@
+How is a component built?
+
+HTML + CSS + JavaScript = React

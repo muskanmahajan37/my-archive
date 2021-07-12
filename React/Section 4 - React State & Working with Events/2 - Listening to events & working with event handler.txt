@@ -1,0 +1,14 @@
+option 1: create an inline funciton
+<button onClick={() => {alert('clicked!')}}>Change Title</button>
+
+
+option 2: create a function and call that function.
+function ExpenseItem(props) {
+    const clickHandler = () => {
+        alert('clicked')
+    }
+
+    return (
+            <button onClick={clickHandler}>Change Title</button>
+    );
+}

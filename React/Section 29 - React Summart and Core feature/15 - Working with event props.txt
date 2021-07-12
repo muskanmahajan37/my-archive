@@ -1,0 +1,20 @@
+to git rid of the modal and the backdrop now we need to change the state again. from setModalOpen(true) to (false)
+
+How do we do that?
+
+{modalOpen && <Backdrop onCancel={closeModal} />}
+// but this dont work
+// we need to update the component itselft and pass this function
+
+-- Backdrop.js
+
+function Backdrop(props) {
+    return <div className="backdrop" onClick={props.onCancel} />
+}
+
+export default Backdrop;
+
+
+////
+props is important for building reusable components
+useState is important for changing what we see on screen

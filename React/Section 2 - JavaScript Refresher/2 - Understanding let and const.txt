@@ -1,0 +1,14 @@
+const myName = 'Max';
+console.log(myName)
+
+myName = 'Ted'
+console.log(myName)
+
+--- output
+
+"Max"
+"error"
+"TypeError: Assignment to constant variable.
+    at wayixajuzi.js:4:8
+    at https://static.jsbin.com/js/prod/runner-4.1.8.min.js:1:13924
+    at https://static.jsbin.com/js/prod/runner-4.1.8.min.js:1:10866"

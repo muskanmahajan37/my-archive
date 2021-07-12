@@ -1,0 +1,1 @@
+even if you create a function tha would change or trigger if something is click. It wont reflect our dom if we don't use state (useState)

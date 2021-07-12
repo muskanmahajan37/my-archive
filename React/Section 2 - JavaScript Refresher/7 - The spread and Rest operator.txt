@@ -1,0 +1,46 @@
+Spread and Rest operators	...
+
+Spread	
+	: Use to split up array elements OR object properties
+	ex: const newArray = [...oldArray, 1, 2]
+	  : const newObject = { ...oldObject, newProp: 5 }
+	  
+	ex: 
+	const myNumber = [1 ,2 ,3];
+	const newNumber = [...myNumber, 4, 5];
+
+	console.log(newNumber)
+	//[1, 2, 3, 4, 5]
+	
+	ex: 
+	const person = {
+	name: "Christian"
+	}
+
+	const newPerson = {
+	...person,
+	age: 19,
+	location: "Philippines"
+	}
+
+	console.log(newPerson)
+	
+	//
+	[object Object] {
+	age: 19,
+	location: "Philippines",
+	name: "Christian"
+	}
+	  
+Rest
+	: Used to merge a list of function arguments into an array
+	ex: function sortArgs(...args) {
+		return args.sort()
+	}
+	
+	ex: const filt = (...a) => {
+	return a.filter(el => el === 3);
+	}
+
+	console.log(filt(1, 2, 3));
+	//[3]

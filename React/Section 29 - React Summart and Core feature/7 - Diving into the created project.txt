@@ -1,0 +1,8 @@
+once react is created
+cleaned up the starting code at the src directory.
+
+App.js
+index.css
+index.js
+
+these three should left on the folder

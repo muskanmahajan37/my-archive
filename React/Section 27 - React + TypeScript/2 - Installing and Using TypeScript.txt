@@ -1,0 +1,7 @@
+npm install typescript
+
+NOTE: typescript does not support browser. so you need to compile with after you type the code.
+
+to do that you just simply 
+
+npx tsc test.ts

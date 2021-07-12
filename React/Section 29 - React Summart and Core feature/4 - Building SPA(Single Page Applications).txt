@@ -1,0 +1,9 @@
+Building Single Page Application(SPAs)
+
+React can be used to control parts of HTML pages or entire pages.
+
+	- Widget approach on a multi-page-application. (Some) pages are still rendered on and served by a backend server.
+
+React can also be used to control the entire frontend of a web application.
+	
+	- Sing-page-application (SPA) approach. Server only sends one HTML page, thereafter, React takes over and controls the UI

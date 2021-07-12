@@ -1,0 +1,21 @@
+app.js
+
+import React from 'react'
+
+------- The alternative of this code 
+return (
+    <div>
+      <h2>Lets change the world!</h2>
+      <Expenses test={expenses} />
+    </div>
+  )
+  
+  
+-------
+
+return React.createElement(
+	'div', 
+	{},
+	React.createElement('h2', {}, "Let's get started!"),
+	React.createElement(Expenses, { items: expenses })
+);

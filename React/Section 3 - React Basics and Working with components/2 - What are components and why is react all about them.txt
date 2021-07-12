@@ -1,0 +1,19 @@
+React is a JavaScript library for building user interfaces
+
+HTML, CSS & JavaScript are about building user interfaces as well.
+
+Reacts makes building complex, interactive and reactive user interfaces simpler.
+
+React is all about "Components"
+	: Because all user interfaces in the end are made up of components
+
+What is a "Components"
+	: combination of html, and css code, and a javascript for logic.
+	
+	
+Why components?
+	: Reusability
+	: Don't repeat yourself
+	
+	: Separation of Concern
+	: Don't do too many things in one and the same place (function)

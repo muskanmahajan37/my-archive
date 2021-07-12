@@ -1,0 +1,26 @@
+.experience-container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.experience-container {
+    display: flex;
+}
+
+.experience-title {
+    color: #216869;
+    font-size: 32px;
+}
+.experience-header h4 {
+    color: #216869;
+    font-size: 18px;
+}
+
+.experience-header p, .experience-header-p {
+    color: #CBCBCB;
+    font-size: 16px;
+}
+
+.experience-p {
+    color: #CBCBCB;
+}

@@ -1,0 +1,83 @@
+.contact-wrapper {
+    margin: 50px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-text {
+    color: #fff;
+}
+
+.form-wrapper {
+    max-width: 1134px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-align {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.name,
+.email {
+    width: 360px;
+    height: 40px;
+    background: #F1F9FF 0% 0% no-repeat padding-box;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.message {
+    width: 360px;
+    height: 130px;
+    background: #F1F9FF 0% 0% no-repeat padding-box;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+#button {
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    transition: .3s ease-in;
+}
+
+button:hover,
+button:active {
+    transform: translateX(5px);
+    border: 1px solid #216869;
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+    background-color: #ccc;
+    color: #3f3f3f;
+    border-color: rgb(255, 255, 255);
+    cursor: not-allowed;
+}
+
+.invalidName input,
+.invalidEmail input,
+.invalidmessage textarea  {
+    border: 1px solid #b40e0e;
+    background-color: #fddddd;
+}
+
+.invalid:focus {
+    border-color: #ff8800;
+    background-color: #fbe8d2;
+}
+
+.text-error {
+    font-weight: 800;
+    color: #ff0000;
+}

@@ -1,0 +1,5 @@
+A JavaScript Library for building user interfaces
+
+React.js
+	- A client-side JavaScript
+	- All about building modern reactive user interfaces for the web

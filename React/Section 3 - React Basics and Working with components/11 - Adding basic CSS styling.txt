@@ -1,0 +1,5 @@
+NOTE: instead of class you simply name it className
+
+import Card from './Card';
+
+<div className="expenses"></div>

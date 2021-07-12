@@ -1,0 +1,32 @@
+create a new directory and name it layout and then create a new file MainNav.js
+
+NOTE: In normal HTML we typically use acher tag to link to something, but in react we dont.
+Instead we use a react package name { Link }
+
+import { Link } from 'react-router-dom'
+
+function MainNav() {
+    return (
+        <header>
+            <div>Meetups</div>
+            <nav>
+                <ul>
+                    <li>
+                        <Link to="/">All Meetups</Link>
+                    </li>
+                    <li>
+                        <Link to="/new-meetup">New Meetup</Link>
+                    </li>
+                    <li>
+                        <Link to="/favorites">Favorites</Link>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    )
+}
+
+export default MainNav;
+
+--- then import it to App.js
+--- then add it before the Switch

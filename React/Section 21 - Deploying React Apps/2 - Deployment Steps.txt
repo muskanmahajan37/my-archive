@@ -1,0 +1,7 @@
+Deployment Steps
+	- Test Code
+	- Optimize Code
+	- Build App for Production
+	- Upload Production Code to Server
+	- Configure Server
+	-

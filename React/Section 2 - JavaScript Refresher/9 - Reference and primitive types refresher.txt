@@ -1,0 +1,14 @@
+const person = {
+	name: 'Max'
+};
+
+const newPerson = {
+	...person
+}
+
+person.name = 'Manasa';
+console.log(newPerson);
+
+// [object object] {
+	name: "Max"
+}

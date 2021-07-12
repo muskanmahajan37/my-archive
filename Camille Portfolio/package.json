@@ -1,0 +1,19 @@
+{
+  "name": "camille-portfolio-v2",
+  "version": "1.0.0",
+  "description": "Once I am done with this version. I will try to recreate this project with react library",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Christian Lumapay",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.1",
+    "netlify-lambda": "^2.0.10",
+    "serverless-http": "^2.7.0"
+  }
+}

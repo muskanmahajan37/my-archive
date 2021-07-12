@@ -1,0 +1,33 @@
+<% layout('layout/index') %>
+<div class="d-flex bg-info text-dark header">
+    <div class="hero-header">
+        <div class="hero-container d-flex flex-wrap">
+            <div>
+                <p class="fs-5">Hi,</p>
+                <h1 class="fw-bolder">I'm Camille Dimpas</h1>
+                <p class="fs-5">Talented and Dedicated Virtual Assistant</p>
+                <button class="btn btn-dark mt-2 mx-2" type="button">
+                    <a class="text-light text-decoration-none" href="#contact">Hire me</a>
+                </button>
+            </div>
+            <div class="panel-container">
+                <div class="panel active" style="background-image: url('images/pop-1.png');">
+                </div>
+                <div class="panel" style="background-image: url('images/pop-2.png');">
+                </div>
+                <div class="panel" style="background-image: url('images/pop-3.png');">
+                </div>
+                <div class="panel" style="background-image: url('images/pop-4.png');">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container">
+    <%- include('./about') %>
+    <%- include('../partials/service-offer') %>
+    <%- include('./services') %>
+    <%- include('./contact') %> 
+    <%- include('./footer') %> 
+</div>

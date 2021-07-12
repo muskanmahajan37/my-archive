@@ -1,0 +1,76 @@
+.wrapper {
+    margin: 200px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #216869;
+    align-self: center;
+    padding-left: 26px;
+}
+
+.logo-wrapper {
+    margin: 50px 0;
+    display: flex;
+    align-self: center;
+}
+
+.logo-list {
+    list-style: none;
+}
+
+.logo-list li {
+    padding: 0 10px;
+    cursor: nesw-resize;
+}
+
+.logo-list li img {
+    height: 50px;
+}
+
+.active {
+    display: initial;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in-out; 
+}
+
+.inactive {
+    display: none;
+    transition: .3s ease-in-out;
+}
+
+.skills-nav {
+    display: flex;
+}
+
+.skills-nav h2 {
+    font-size: 18px;
+}
+
+.frontEndText, .backEndText, .designText, .othersText {
+    font-size: 22px;
+    color: #CBCBCB;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.frontEndText:hover, .backEndText:hover, .designText:hover, .othersText:hover {
+    border: 1px solid #CBCBCB;
+    border-radius: 5px;;
+    padding: 6px 13px;
+}
+
+.focus {
+    border: 1px solid #CBCBCB;
+    border-radius: 5px;;
+    padding: 6px 13px;
+}

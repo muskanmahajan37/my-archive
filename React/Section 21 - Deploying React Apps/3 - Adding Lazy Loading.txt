@@ -1,0 +1,4 @@
+Lazy Loading
+	- Load code only when it's needed
+	
+	

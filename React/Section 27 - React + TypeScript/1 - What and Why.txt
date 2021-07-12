@@ -1,0 +1,6 @@
+TypeScript is a "superset" to JavaScript.
+TypeScript adds static typing to JavaScript
+
+JavaScript on its own is dynamically typed
+
+---

@@ -1,0 +1,13 @@
+When to validate?
+
+When form is submitted:
+	- Allows the user to enter a valid value before warning him/her
+	- Avoid unnecessary warnings but maybe present feedback "too late"
+	
+When input is losing focus:
+	- Allows the user to enter a valid value before warning.
+	- Very useful for untouched forms
+	
+On every keystroke
+	- Warns user before he/she had a chance of entering valid values
+	- If applied only on invalid inputs, has the potential of providing more direct feedback.

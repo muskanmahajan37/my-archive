@@ -1,0 +1,211 @@
+@media(min-width: 650px) {
+
+    .container-hero {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1280px;
+        height: 665px;
+        background-image: url('../images/camille-header.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media(min-width: 769px) {
+    .container-hero h1 {
+        width: 882px;
+        font-size: 42px;
+        padding-top: 300px;
+        padding-left: 129px;
+    }
+
+    .container-hero h2 {
+        width: 882px;
+        font-size: 16px;
+        padding-top: 10px;
+        padding-left: 129px;
+    }
+
+    .container-about img {
+        width: 389px;
+        padding-top: 16px;
+        margin-left: 40px;
+    }
+}
+
+@media(min-width: 869px) {
+    .container-about {
+        width: 100%;
+        margin: 0 auto;
+        text-align: start;
+        min-height: 670px;
+        background-color: #736F72;
+        padding: 0 56px;
+    }
+
+    .container-about img {
+        width: 449px;
+        padding-top: 16px;
+        margin-left: 10px;
+    }
+}
+
+@media(min-width: 900px) {
+    .container-hero {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1280px;
+        height: 835px;
+        background-image: url('../images/camille-header.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container-hero h1 {
+        width: 882px;
+        font-size: 42px;
+        padding-top: 300px;
+        padding-left: 129px;
+    }
+
+    .container-hero h2 {
+        width: 882px;
+        font-size: 16px;
+        padding-top: 10px;
+        padding-left: 129px;
+    }
+
+    .nav,
+    .nav-btn {
+        display: none;
+    }
+
+    .nav-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-display {
+        justify-content: space-evenly;
+    }
+
+    .nav-bar-900px ul {
+        list-style: none;
+        display: flex;
+        visibility: visible;
+        padding-right: 40px;
+    }
+
+    .nav-bar-900px ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .container-about {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        text-align: start;
+        min-height: 670px;
+        padding: 0 56px;
+        display: flex;
+        padding-top: 20px;
+    }
+
+    .container-about-1 {
+        padding-top: 40px;
+        max-width: 1000px;
+    }
+
+    .container-about img {
+        height: 449px;
+        margin-top: 60px;
+        border-radius: 10px;
+    }
+
+    .container-about p {
+        text-align: start;
+        margin: 0 auto;
+        padding-top: 16px;
+    }
+
+}
+
+@media(min-width: 1280px) {
+    .nav-container {
+        justify-content: space-between;
+    }
+
+    .nav-bar-900px ul {
+        padding-right: 40px;
+    }
+
+    .container-hero h1 {
+        width: 882px;
+        font-size: 82px;
+        padding-top: 300px;
+        padding-left: 129px;
+    }
+
+    .container-hero h2 {
+        width: 882px;
+        font-size: 22px;
+        padding-top: 10px;
+        padding-left: 129px;
+    }
+
+}
+
+/* @media(min-width: 1366px) {
+    .nav-container {
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+}
+
+@media(min-width: 1500px) {
+    .nav-container {
+        justify-content: space-between;
+        padding-left: 100px;
+    }
+
+    .nav-bar-900px ul {
+        padding-right: 100px;
+    }
+}
+
+@media(min-width: 1655px) {
+    .nav-container {
+        justify-content: space-around;
+        padding-left: 100px;
+    }
+
+    .nav-bar-900px ul {
+        padding-right: 100px;
+    }
+}
+
+@media(min-width: 1800px) {
+    .nav-container {
+        justify-content: space-around;
+        padding-left: 100px;
+    }
+
+    .nav-bar-900px ul {
+        padding-right: 100px;
+    }
+}
+
+@media(min-width: 1920px) {
+    .nav-container {
+        justify-content: f;
+        padding-left: 100px;
+    }
+
+    .nav-bar-900px ul {
+        padding-right: 100px;
+    }
+} */
