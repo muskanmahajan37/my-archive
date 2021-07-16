@@ -12,7 +12,7 @@ const AboutMySelf = () => {
                 <p>Fast-forward to today. I have done with my Udemy course and currently studying data science. I'm also starting building projects.</p>
             </div>
             <div>
-                <img className="aboutPhoto" src={aboutPhoto} />
+                <img className="aboutPhoto" src={aboutPhoto} alt=""/>
             </div>
         </Container>
     )

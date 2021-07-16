@@ -1,25 +1,55 @@
+import { useState, useEffect } from 'react';
 import './App.css';
 
-import MyNavbar from './components/navbar/MyNavBar';
-import Header from './components/content/Header';
-import AboutMySelf from './components/content/AboutMySelf';
-import WorkedExperience from './components/content/WorkedExperience';
-import SkillsList from './components/content/SkillsList';
-import ProjectBuilt from './components/content/ProjectBuilt';
-import ContactMe from './components/content/ContactMe';
-import Footer from './components/footer/Footer';
+import ScaleLoader from "react-spinners/ScaleLoader";
+import mylogo from "./images/my-logo.png"
+
+import {
+  MyNavbar,
+  Header,
+  AboutMySelf,
+  WorkedExperience,
+  SkillsList,
+  ProjectBuilt,
+  ContactMe,
+  Footer
+} from './components'
+
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false)
+    }, 1000)
+  }, [])
+
   return (
     <div className="bg-color">
-      <MyNavbar />
-      <Header />
-      <AboutMySelf />
-      <WorkedExperience />
-      <SkillsList />
-      <ProjectBuilt />
-      <ContactMe />
-      <Footer />
+      {
+        loading ?
+          <div className="loading-screen">
+            <ScaleLoader
+              color={"#216869"}
+              loading={loading}
+              size={10}
+            />
+            <h2><img src={mylogo} alt="" /></h2>
+          </div>
+          :
+          <>
+            <MyNavbar />
+            <Header />
+            <AboutMySelf />
+            <WorkedExperience />
+            <SkillsList />
+            <ProjectBuilt />
+            <ContactMe />
+            <Footer />
+          </>
+      }
     </div>
   );
 }

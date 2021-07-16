@@ -64,7 +64,7 @@
 }
 
 .frontEndText:hover, .backEndText:hover, .designText:hover, .othersText:hover {
-    border: 1px solid #CBCBCB;
+    /* border: 1px solid #CBCBCB; */
     border-radius: 5px;;
     padding: 6px 13px;
 }

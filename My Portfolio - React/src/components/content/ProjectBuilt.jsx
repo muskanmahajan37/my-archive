@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Container, Card, Button } from 'react-bootstrap'
 import './projectbuilt.css'
 import githubLogo from '../../images/github-white.png'
@@ -17,7 +17,7 @@ export default function ProjectBuilt() {
                         <Card.Text>
                             Nodejs version. I will try to recreate this project with react library.
                         </Card.Text>
-                        <Button variant="dark" className="githubBtn"><a href="https://github.com/clumapay30/camille-v2-nodejs" target="_blank"><img src={githubLogo} alt="" /></a></Button>
+                        <Button variant="dark" className="githubBtn"><a href="https://github.com/clumapay30/camille-v2-nodejs" target="_blank"  rel="noreferrer"><img src={githubLogo} alt="" /></a></Button>
                     </Card.Body>
                 </Card>
                 <Card className="my-3" style={{ width: '18rem', cursor: 'nesw-resize' }}>
@@ -26,7 +26,7 @@ export default function ProjectBuilt() {
                         <Card.Text>
                             Quick project: Combined loading screen and todo-list
                         </Card.Text>
-                        <Button variant="dark" className="githubBtn"><a href="https://github.com/clumapay30/todo-list-v2" target="_blank"><img src={githubLogo} alt="" /></a></Button>
+                        <Button variant="dark" className="githubBtn"><a href="https://github.com/clumapay30/todo-list-v2" target="_blank"  rel="noreferrer noopener"><img src={githubLogo} alt="" /></a></Button>
                     </Card.Body>
                 </Card>
                 <Card className="my-3" style={{ width: '18rem', cursor: 'nesw-resize' }}>
@@ -35,7 +35,7 @@ export default function ProjectBuilt() {
                         <Card.Text>
                             This project inspired by a post on social media.
                         </Card.Text>
-                        <Button variant="dark" className="githubBtn"><a href="https://github.com/clumapay30/expanding-cards" target="_blank"><img src={githubLogo} alt="" /></a></Button>
+                        <Button variant="dark" className="githubBtn"><a href="https://github.com/clumapay30/expanding-cards" target="_blank"  rel="noreferrer noopener"><img src={githubLogo} alt="" /></a></Button>
                     </Card.Body>
                 </Card>
             </div>
@@ -47,7 +47,7 @@ export default function ProjectBuilt() {
                         <Card.Text>
                             This first project was built after learning front-end javascript and before learning nodejs etc.
                         </Card.Text>
-                        <Button variant="dark" className="githubBtn"><a href="https://github.com/clumapay30/calculator" target="_blank"><img src={githubLogo} alt="" /></a></Button>
+                        <Button variant="dark" className="githubBtn"><a href="https://github.com/clumapay30/calculator" target="_blank"  rel="noreferrer noopener"><img src={githubLogo} alt="" /></a></Button>
                     </Card.Body>
                 </Card>
                 <Card className="my-3" style={{ width: '18rem', cursor: 'nesw-resize' }}>
@@ -56,7 +56,7 @@ export default function ProjectBuilt() {
                         <Card.Text>
                             This project inspired by a post on social media.
                         </Card.Text>
-                        <Button variant="dark" className="githubBtn"><a href="https://github.com/clumapay30/loading-page" target="_blank"><img src={githubLogo} alt="" /></a></Button>
+                        <Button variant="dark" className="githubBtn"><a href="https://github.com/clumapay30/loading-page" target="_blank"  rel="noreferrer noopener"><img src={githubLogo} alt="" /></a></Button>
                     </Card.Body>
                 </Card>
                 <Card className="my-3" style={{ width: '18rem', cursor: 'nesw-resize' }}>
@@ -65,7 +65,7 @@ export default function ProjectBuilt() {
                         <Card.Text>
                             This project was part of the course I took on Udemy.
                         </Card.Text>
-                        <Button variant="dark" className="githubBtn"><a href="https://github.com/clumapay30/nature-camp" target="_blank"><img src={githubLogo} alt="" /></a></Button>
+                        <Button variant="dark" className="githubBtn"><a href="https://github.com/clumapay30/nature-camp" target="_blank"  rel="noreferrer noopener"><img src={githubLogo} alt="" /></a></Button>
                     </Card.Body>
                 </Card>
             </div>

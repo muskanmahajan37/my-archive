@@ -17,11 +17,11 @@ const Header = () => {
                         <h1 style={{ color: '#FFFFFF' }}>I'm Christian Lumapay</h1>
                         <div className="d-flex">
                             <p style={{ color: '#CBCBCB' }}>Web Developer | Web Designer</p>
-                            <a href="#contact"><button className="mx-3 hire-btn">Hire me</button></a>
+                            <a href="#contact"><button className="mx-3 hire-btn">Get in touch</button></a>
                         </div>
                     </div>
                     <div>
-                        <img src={heroheader} className="hero-image" width="500" height="500" />
+                        <img src={heroheader} className="hero-image" width="500" height="500" alt=""/>
                     </div>
 
                 </div>

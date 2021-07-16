@@ -10,15 +10,16 @@
 
 .my-logo {
     padding: 0;
+    width: 145px;
 }
 
 .text-hover {
-    font-weight: 700;
+    font-weight: 500;
     color: #CBCBCB;
     transition: .3s ease-in-out;
 }
 
-.text-hover:hover, .text-hover:focus {
-    color: #fff;
-    transform: translateX(2px);
+.text-hover:hover {
+    font-weight: 800;
+    color: #216869;
 }

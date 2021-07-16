@@ -62,7 +62,7 @@ button:disabled:active {
     background-color: #ccc;
     color: #3f3f3f;
     border-color: rgb(255, 255, 255);
-    cursor: not-allowed;
+    cursor: nesw-resize;
 }
 
 .invalidName input,

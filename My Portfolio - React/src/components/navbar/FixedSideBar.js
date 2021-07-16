@@ -13,16 +13,16 @@ const FixedSideBar = () => {
                 <img className="fixed-left-line" src={fixedLine} alt="" />
                 <div className="fixed-left-sm">
                     <div>
-                        <a href="https://www.linkedin.com/in/christian-virtual-assistant/" target="_blank"><img className="my-4 linkedin" src={linkedin} alt="" /></a>
+                        <a href="https://www.linkedin.com/in/christian-virtual-assistant/" target="_blank" rel="noreferrer noopener"><img className="my-4 linkedin" src={linkedin} alt="" /></a>
                     </div>
                     <div>
-                        <a href="https://twitter.com/c_lumapay30" target="_blank"><img className="my-4 twitter" src={twitter} alt="" /></a>
+                        <a href="https://twitter.com/c_lumapay30" target="_blank" rel="noreferrer noopener"><img className="my-4 twitter" src={twitter} alt="" /></a>
                     </div>
                     <div>
-                        <a href="https://github.com/clumapay30" target="_blank"><img className="my-4 github" src={github} alt="" /></a>
+                        <a href="https://github.com/clumapay30" target="_blank" rel="noreferrer noopener"><img className="my-4 github" src={github} alt="" /></a>
                     </div>
                     <div>
-                        <a href={myResume} target="_blank"><button className="resume-btn">Resume</button></a>
+                        <a href={myResume} target="_blank noopener"><button className="resume-btn">Resume</button></a>
                     </div>
                 </div>
             </div>

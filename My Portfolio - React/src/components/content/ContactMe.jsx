@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Container, Form, InputGroup, Button, Col, Row } from 'react-bootstrap'
+import { Container, Button } from 'react-bootstrap'
 import './contactme.css'
 
 export default function ContactMe() {
@@ -14,6 +14,7 @@ export default function ContactMe() {
     const enteredNameIsValid = enteredName.trim() !== '';
     const enteredEmailIsValid = enteredEmail.trim() !== '';
     const enteredTextIsValid = enteredText.trim() !== '';
+
     const nameInputIsvalid = !enteredNameIsValid && enteredNameTouched;
     const emailInputIsvalid = !enteredEmailIsValid && enteredEmailTouched;
     const textInputIsvalid = !enteredTextIsValid && enteredTextTouched;
@@ -27,8 +28,8 @@ export default function ContactMe() {
         setEnteredName(event.target.value)
     }
 
-    const emailInputChangeHandler = event => {
-        setEnteredEmail(event.target.value)
+    const emailInputChangeHandler = e => {
+        setEnteredEmail(e.target.value)
     }
 
     const textInputChangeHandler = event => {
@@ -69,11 +70,11 @@ export default function ContactMe() {
 
     function sendEmail() {
         window.Email.send({
-            SecureToken: "fbdb781e-b76c-4c9a-8a00-277fb4464c29",
-            To: 'clumapay.info@gmail.com',
-            From: `${enteredEmail}`,
-            Subject: `Looking for VA - ${enteredName}`,
-            Body: `<b>Name:</b> ${enteredName} <br/><b>Email:</b> ${enteredEmail} NOTE: Please reply to this email. <br/><br/> <b>Message:</b> <br/>${enteredText}`
+            SecureToken: process.env.REACT_APP_SECURED_TOKEN,
+            To: process.env.REACT_APP_EMAIL_SEND_TO,
+            From: `${enteredName}`,
+            Subject: `Virtual Assistant - ${enteredName}`,
+            Body: `<b>Name:</b> ${enteredName} <br/><b>Email:</b> ${enteredEmail} <br/><br/> <b>Message:</b> <br/>${enteredText}`
         }).then(
             name => alert(`Hi ${enteredName}, your message has been sent!`)
         )

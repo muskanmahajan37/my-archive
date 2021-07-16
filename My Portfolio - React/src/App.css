@@ -1,3 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .bg-color {
     background-color: #191919;
+    margin: 0;
+    padding: 0;
+}
+
+.loading-screen {
+    padding-top: 50vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-screen h2 {
+    margin: 10px;
+    text-align: center;
+}
+
+@media(max-width: 769px) {
+    .loading-screen {
+        padding-top: 40vh;
+    }
 }
