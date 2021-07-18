@@ -1,0 +1,14 @@
+What is Next.js?
+	: Framework for creating pre-rendered React websites
+	: Offers us both server side redering & static site generation
+	: (SSR) & (SSG)
+	
+Benefits
+	: Pre-rendering improves performance
+	: Better Search Engine Optimization (SEO)
+	
+Installation
+	: npx create-next-app .
+	
+Github repo:
+	https://github.com/iamshaunjp/nextjs-tutorial/tree/lesson-10
