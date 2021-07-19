@@ -1,0 +1,106 @@
+create a new file:
+	webpack.dev.js
+	webpack.prod.js
+	webpack.common.js
+	
+npm install --save-dev webpack-merge
+----------------
+webpack.common.js
+
+NPM: npm install --save-dev file-loader
+
+
+const HtmlWebpackPlugin = require("html-webpack-plugin")
+const path = require('path');
+
+module.exports = {
+	entry: ".src/index.js",
+	module: {
+		rules: [
+			{
+				test: /\.scss$/,
+				use: [
+					"style-leader", //3. Inject style into Dom
+					"css-loader", 	//2. Turns css into commonjs
+					"sass-loader"	//1. Turns sass into css
+				]
+			},
+			{
+				test: /\.html$/,
+				use: ["html-loader"]
+			},
+			{
+				test: /\.(svg|png|jpg|gif)$/,
+				use: {
+					loader: "file-loader",
+					options: {
+						name: "[name].[hash].[ext]",
+						outputPath: "imgs"
+					}
+				}
+			}
+		]
+	}
+}
+
+
+----------------
+webpack.dev.js
+
+const path = require('path');
+const common = require("./webpack.common")
+const merge = require("webpack-merge")
+
+module.exports = merge(common, {
+	mode: "development",
+	output: {
+		filename: "main.js",
+		path: path.resolve(__dirname, "build")
+	},
+	plugins: [
+		new HtmlWebpackPlugin({
+			template: "./src/template.html"
+		})
+	],
+});
+
+
+
+
+
+----------------
+webpack.prod.js
+NPM: npm install --save clean-webpack-plugin
+
+
+const path = require('path');
+const common = require("./webpack.common")
+const merge = require("webpack-merge")
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+
+module.exports = merge(common, {
+	mode: "production",
+	output: {
+		filename: "main.[contentHash].js",
+		path: path.resolve(__dirname, "build")
+	},
+	plugins: [new CleanWebpackPlugin(), new TerserPlugin(), new HtmlWebpackPlugin({
+		template: "./src/template.html",
+		minify: {
+			removeAttributeQuotes: true,
+			collapseWhitespace: true,
+			removeComments: true
+		}
+	})]
+});
+
+
+-------------------
+npm install --save-dev webpack-dev-server
+
+package.json
+
+"script": {
+	"start": "webpack-dev-server --open --config webpack.dev.js",
+	"build": "webpack --config webpack.prod.js"
+}

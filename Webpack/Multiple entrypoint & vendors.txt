@@ -1,0 +1,21 @@
+Multiple entrypoint & vendors.js
+
+--------------
+src/vendor.js
+
+import "bootstrap";
+
+NOTE: this option wont work if you use navbar toggleoption from bootstrap because there is some javascript code needed.
+
+in order to do that. 
+
+npm install --save-dev jquery popper.js
+
+
+-------------
+webpack.common.js
+
+entry: {
+	main: "./src/index.js",
+	vendor: "./src/vendor.js"
+}

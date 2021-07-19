@@ -1,0 +1,27 @@
+css:
+	npm install --save-dev style-loader css-loader
+	config:
+		module: {
+		rules: [
+				{
+				test: /\.css$/,
+				use: ["style-loader", "css-loader"]
+				}
+			]
+		}
+	
+sass:
+	npm install --save-dev sass-loader node-sass 
+	config:
+		module: {
+		rules: [
+				{
+				test: /\.scss$/,
+				use: [
+					"style-loader", //3. Inject styles into DOM
+					"css-loader", 	//2. turn css into commonjs
+					"sass-loader" 	//1. turn sass into css
+					]
+				}
+			]
+		}

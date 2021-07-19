@@ -1,0 +1,40 @@
+package.json
+---------------
+{
+	"name": "",
+	"version": "5.0.0",
+	"private": true,
+	"main": "index.js",
+	"script": {
+		"start": "webpack --config webpack.config.js"
+	},
+	"keyword": [],
+	"author": "",
+	"license": "",
+	"devDependencies": }
+		"webpack": "5.0.0",
+		"webpack-cli": ""
+	}
+}
+
+---------------
+webpack.config.js
+
+const path = require('path');
+module.exports = {
+	mode: "development",
+	devtool: "none",
+	entry: "./src/index.js",
+	output: {
+		filename: "main.[contentHash].js",
+		path: path.resolve(__dirname, "build")
+	},
+	module: {
+		rules: [
+			{
+				test: /\.css$/,
+				use: ["style-loader", "css-loader"]
+			}
+		]
+	}
+};
